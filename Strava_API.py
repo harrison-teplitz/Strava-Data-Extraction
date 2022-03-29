@@ -67,7 +67,8 @@ def create_mySQL_table():
 #my_cursor.execute('ALTER TABLE activities MODIFY activityID VARCHAR(255)')
 def get_kudos(x):
     header = {'Authorization': 'Bearer ' + access_token}
-    param_a = {'per_page': x, 'page': 1} ## Parameter dictionary for getting activites. X = number of activites to see starting Last In First Out
+    ## Parameter dictionary for getting activites. X = number of activites to see starting Last In First Out
+    param_a = {'per_page': x, 'page': 1}
     my_dataset = requests.get(activites_url, headers=header, params=param_a).json()
     #poly = my_dataset[0]["map"]["summary_polyline"]
     kudos_by_id = {}
