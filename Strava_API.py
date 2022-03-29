@@ -102,6 +102,14 @@ def get_kudos(x):
         #sql_code = "INSERT INTO followers (name, kudos) VALUES (%s, %s)"
         my_cursor.execute("INSERT INTO followers (name, kudos) VALUES (%s, %s)", (user, kudos))
     mydb.commit()
+    
+num_activities = 15
+get_kudos(num_activities)
 
-
-get_kudos(15)
+#Pulling data from table and displaying results
+my_cursor.execute("SELECT * FROM followers")
+result = my_cursor.fetchall()
+print('From the last %s activites, these are your most loyal followers' %num_activities)
+print('FOLLOWER---Kudo Count')
+for row in result:
+    print(row[0] + " %s" %row[1])
