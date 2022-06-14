@@ -11,13 +11,13 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 ## URLs for talking to Strava API
 auth_url = "https://www.strava.com/oauth/token"
 activites_url = 'https://www.strava.com/api/v3/athlete/activities'
-kudos_url = "https://www.strava.com/api/v3/activities/77863/kudos"
+kudos_url = "https://www.strava.com/api/v3/activities/xxxxx/kudos"
 
 ## This payload is used to take my refresh token and recieve an access token
 payload = {
     'client_id': "77863",
-    'client_secret': '62afc003e4dea79c0ea4e94afa95bb1753764f04',
-    'refresh_token': 'f46192646ed9c2b2f4577c58ab3452bf317e6517',
+    'client_secret': 'xxxxx',
+    'refresh_token': 'xxxxx',
     'grant_type': "refresh_token",
     'f': 'json'
 }
