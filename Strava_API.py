@@ -15,7 +15,7 @@ kudos_url = "https://www.strava.com/api/v3/activities/xxxxx/kudos"
 
 ## This payload is used to take my refresh token and recieve an access token
 payload = {
-    'client_id': "77863",
+    'client_id': "xxxxx",
     'client_secret': 'xxxxx',
     'refresh_token': 'xxxxx',
     'grant_type': "refresh_token",
